@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fish Categories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+  <style>
+    
+     .carousel-indicators {
+      justify-content: center;
+      bottom: 20px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.5;
+      pointer-events: none; 
+      margin: 0 5px;
+      border: none;
+    }
+
+    .carousel-indicators .active {
+      opacity: 1;
+      background-color: #f8f9fa;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 500px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 500px; /* ปรับความสูงตามต้องการ */
+      object-fit: cover; /* บีบภาพให้พอดีโดยไม่เสียอัตราส่วน */
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .carousel-indicators a {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.5;
+      margin: 0 5px;
+      display: inline-block;
+    }
+
+    .carousel-indicators a.active {
+      opacity: 1;
+      background-color: #f8f9fa;
+    }
+
+  </style>
+
+<body>
+<div class="container-fluid py-4">
+
+    <div class="row text-center mb-3">
+        <div class="col-md-12 bg-primary h1 text-white p-3">
+            ชนิดของปลา <span class="glyphicon glyphicon-cloud glyphicon-2x"></span> <!-- glyphicon -->
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg py-4 bg-light"> <!-- navbar -->
+      <div class="container-fluid">
+    
+        <ul class="nav nav-pills mx-3"><!-- nav-pills -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="หน้าแรก.html">หน้าแรก</a>
+          </li>
+
+          <li class="nav-item dropdown"> <!-- dropdown -->
+            <a class="nav-link dropdown-toggle" href="#" id="fishDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ชนิดของปลา
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="fishDropdown"> <!-- dropdown -->
+              <li><a class="dropdown-item" href="ปลาน้ำจืด.html">ปลาน้ำจืด</a></li>
+              <li><a class="dropdown-item" href="ปลาน้ำเค็ม.html">ปลาน้ำเค็ม</a></li>
+              <li><a class="dropdown-item" href="ปลาสวยงาม.html">ปลาสวยงาม</a></li>
+            </ul>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="วิธีเลี้ยงปลา.html">วิธีเลี้ยงปลา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ประโยชน์ของปลา.html">ประโยชน์ของปลา</a>
+          </li>
+        </ul>
+
+        <div>
+          <a href="#">
+            <span class="glyphicon glyphicon-tint"></span> <!-- glyphicon -->
+          </a>
+        </div>
+    
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      </div>
+    
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://kaset.today/wp-content/uploads/2021/11/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%B8%E0%B8%81.jpg" class="d-block w-100" alt="สไลด์ 1">
+          <div class="carousel-caption text-start">
+            <h5>ปลาดก</h5>
+            <p>ปลาดุกเป็นปลาที่เลี้ยงง่ายและเติบโตเร็ว นิยมเลี้ยงเพื่อการค้าและการบริโภค</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.taludiving.com/images/column_1375615558/%BB%C5%D2%CB%C1%D6%A1%C2%D1%A1%C9%EC.jpg" class="d-block w-100" alt="สไลด์ 2">
+          <div class="carousel-caption text-start">
+            <h5>ปลาหมึก</h5>
+            <p>ปลาหมึกเป็นสัตว์ทะเลที่มีลักษณะเฉพาะตัว นิยมใช้เป็นอาหารในหลายประเทศ</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/RWy6d6F1lVQ/maxresdefault.jpg" class="d-block w-100" alt="สไลด์ 3">
+          <div class="carousel-caption text-start">
+            <h5>ปลาอโรวาน่า</h5>
+            <p>ปลาอโรวาน่าเป็นปลาที่มีลักษณะเด่นและราคาแพง นิยมเลี้ยงเพื่อโชคลาภหรือเสริมมงคล</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- ปุ่มเลื่อนไปหน้า/หลัง -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <br>
+
+  <div class="row text-center mb-3">
+    <div class="col-md-2 img-thumbnail text-black border-dark p-3">
+      ปลาน้ำจืด<br>  
+      <!-- img class -->
+      <img src="https://st.bigc-cs.com/cdn-cgi/image/format=webp,quality=90/public/media/catalog/product/93/02/0212193/0212193_8.jpg" class="img-thumbnail" alt="#" width="200" height="200"><br>
+      <small>ปลานิล - โตง่าย</small>
+    </div>
+    <div class="col-md-2 img-thumbnail text-black border-dark p-3">
+      ปลาน้ำเค็ม<br>
+      <!-- img class -->
+      <img src="https://down-th.img.susercontent.com/file/78f5670f325b21d05bdcff028867c1d9" class="img-thumbnail" alt="#" width="200" height="200"><br>
+      <small>ปลาทู - ยอดนิยม</small>
+    </div>
+    <div class="col-md-2 img-thumbnail text-black border-dark p-3">
+      ปลาสวยงาม<br>
+      <!-- img class -->
+      <img src="https://www.technologychaoban.com/wp-content/uploads/2024/01/4-2-1024x1024.png" class="img-thumbnail" alt="#" width="200" height="200"><br>
+      <small>ปลาทอง - สีสดใส</small>
+    </div>
+    <div class="col-md-2 img-thumbnail text-black border-dark p-3">
+      ปลากินเนื้อ<br>
+      <!-- img class -->
+      <img src="https://siamfishing.com/_pictures/content/upload2012/201203/1331060420.jpg" class="img-thumbnail" alt="#" width="200" height="200"><br>
+      <small>ปลาชะโด - นักล่า</small>
+    </div>
+    <div class="col-md-2 img-thumbnail text-black border-dark p-3">
+      ปลาเศรษฐกิจ<br>
+      <!-- img class -->
+      <img src="https://www.fromnorway-th.com/siteassets/species/salmon/header-salmon.jpg?width=1100&height=984&transform=downFill&hash=86d6b717a41a007814708d1cdcb8366d" class="img-thumbnail" alt="#" width="200" height="200"><br>
+      <small>แซลมอน - น้ำเย็น</small>
+    </div>
+    <div class="col-md-2 img-thumbnail text-black border-dark p-3">
+      ปลาหายาก<br>
+      <!-- img class -->
+      <img src="https://f.ptcdn.info/579/006/000/1372149912-RedArowana-o.jpg" class="img-thumbnail" alt="#" width="200" height="200"><br>
+      <small>อโรวาน่า - โชคลาภ</small>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-6 bg-success text-white p-3">
+      แนะนำ: ปลาน้ำจืดน่าเลี้ยง<br>
+      <small>ปลานิล ปลาช่อน ปลาดุก</small>
+    </div>
+    <div class="col-md-6 bg-success text-white p-3">
+      แนะนำ: ปลาทะเลยอดนิยม<br>
+      <small>ปลากะพง ปลาทู ปลาหมึก</small>
+    </div>
+  </div>
+  <br>
+
+  <!-- footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="row text-center">
+      <div class="col-md-12 text-white">
+        แหล่งอ้างอิง : <a href="https://www4.fisheries.go.th/">https://www4.fisheries.go.th/</a><br>
+        นายภัทรพล เรืองรัตนโรจน์ 664281023 66/49
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
